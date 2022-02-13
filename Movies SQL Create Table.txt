@@ -1,0 +1,38 @@
+CREATE TABLE tblMovie
+(MovieID INT, 
+Title VARCHAR (100), 
+Year INT, 
+Director VARCHAR (30),
+GrossTrillionDollars MONEY);
+
+CREATE TABLE tblActor
+(MovieID INT,
+ActorFirstName VARCHAR (30), 
+ActorSecondName VARCHAR (30));
+
+------------------------------------------------------------
+INSERT INTO tblMovie (MovieID, Title, Year, Director, GrossTrillionDollars)
+VALUES
+('1', 'Avengers: Endgame', '2019', 'Russo', '2.798'),
+('2', 'Star Wars: The Force Awakens', '2015', 'Abrams', '2.068'),
+('3', 'Avengers: Infinity War', '2018', 'Russo', '2.048'),
+('4', 'Jurassic World', '2015', 'Trevorrow', '1.672'),
+('5', 'The Lion King', '2019', 'Favreau', '1.657');
+
+INSERT INTO tblActor (MovieID, ActorFirstName, ActorSecondName)
+VALUES
+('1', 'Chris', 'Evans'),
+('1', 'Mark', 'Ruffalo'),
+('1', 'Scarlett', 'Johansson'), 
+('2', 'Adam', 'Driver'), 
+('2', 'Harrison', 'Ford'),
+('2', 'Daisey', 'Ridley'),
+('3', 'Chris', 'Hemsworth'),
+('3', 'Chris', 'Evans'),
+('3', 'Mark', 'Ruffalo'),
+('4', 'Chris', 'Pratt'), 
+('4', 'Bryce', 'Howard'),
+('4', 'Katie', 'McGrath'),
+('5', 'Donald', 'Glover'),
+('5', 'Seth', 'Rogan'),
+('5', 'Beyonce', 'Knowles');
